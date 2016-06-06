@@ -9,9 +9,9 @@ using System.Threading.Tasks;
  *Author: Md Mamunur Rahman
  * Student ID: 300872772 
  *
- * Date: June 03, 2016
- * Description: This program demonstrates a game charachtar named 'Hero', which has Name, Strength, Speed 
- * and Health properties to be shown to Console. 
+ * Date: June 06, 2016
+ * Description: This program demonstrates a game charachtar named 'SuperHero', 
+ * which has been inharited from Hero class 
  * 
  */
 

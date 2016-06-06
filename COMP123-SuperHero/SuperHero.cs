@@ -18,19 +18,13 @@ using System.Threading.Tasks;
 
 namespace COMP123_SuperHero
 {
-    /**
-     * This is the driver class for SuperHero program that calls SuperHero class
-     * 
-     * @class Program
-     */
-    class Program
+    class SuperHero : Hero
     {
-
-        static void Main(string[] args)
+        public SuperHero(string name) : base(name)
         {
-
-
-
         }
+
     }
+
+
 }
