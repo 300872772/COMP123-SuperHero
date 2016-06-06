@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * which has been inharited from Hero class 
  * 
  * 
- * Version: 0.0.1 - Added SuperHero class
+ * Version: 0.0.2 - Added Instant variable, properties, constructor, private and public method
  */
 
 namespace COMP123_SuperHero
@@ -28,8 +28,12 @@ namespace COMP123_SuperHero
 
         static void Main(string[] args)
         {
+            SuperHero superHero = new SuperHero("Mamun");
 
+            superHero.Show();
+            Console.WriteLine();   
 
+            superHero.ShowPowers();
 
         }
     }
