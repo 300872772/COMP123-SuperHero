@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * which has been inharited from Hero class 
  * 
  * 
- * Version: 0.0.3 - Called SuperHero class along with different methods.
+ * Version: 0.0.4 - Added Console decoration.
  */
 
 namespace COMP123_SuperHero
@@ -28,16 +28,22 @@ namespace COMP123_SuperHero
 
         static void Main(string[] args)
         {
+            //created superHero object
             SuperHero superHero = new SuperHero("Mamun");
 
+            //called Show method under superHero object
             superHero.Show();
-            Console.WriteLine();   
+            Console.WriteLine();
 
+            //called Fight method under superHero object
+            superHero.Fight();
+            Console.WriteLine();
+
+            //called ShowPowers method under superHero object
             superHero.ShowPowers();
             Console.WriteLine();
 
-            superHero.Fight();
-            Console.WriteLine();
+
 
         }
     }

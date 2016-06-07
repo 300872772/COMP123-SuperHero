@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 /*
@@ -116,12 +117,51 @@ namespace COMP123_SuperHero
 
         public void ShowPowers()
         {
+            Thread.Sleep(400);
+            Console.WriteLine(" __        __   __  __           __  __   __");
+            Thread.Sleep(400);
+            Console.WriteLine("|__  |  | |__| |__ |__|    |__| |__ |__| |  |");
+            Thread.Sleep(400);
+            Console.WriteLine(" __| |__| |    |__ |  \\    |  | |__ |  \\ |__|");
+            Thread.Sleep(400);
+            Console.WriteLine();
+            Thread.Sleep(400);
+
+            int count = 0;
+            string heading = "# # # # # # # # # # # # # # # # _ S u p e r H e r o _ h a s _ g o t _ 3 _ P o w e r s _ # # # # # # # # # # # # # # # # # # # # #";
+            string[] stringContainer = heading.Split();
+            Thread.Sleep(40);
+
+            foreach (string singleChar in stringContainer)
+            {
+                Thread.Sleep(20);
+                Console.Write(singleChar);
+                
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Thread.Sleep(50);
             foreach (string superPower in _superPowers)
             {
-                Console.WriteLine(superPower);
-
+                count++;
+                Console.WriteLine("     " + count +": " + superPower);
+               
             }
-            
+
+            Console.WriteLine();
+
+            Thread.Sleep(50);
+
+            for (int i =0; i<65; i++)
+            {
+                Thread.Sleep(20);
+                Console.Write("#");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Thread.Sleep(50);
         }
     }
 
