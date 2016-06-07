@@ -12,12 +12,19 @@ using System.Threading.Tasks;
  * Description: This program demonstrates a game charachtar named 'SuperHero', 
  * which has been inharited from Hero class 
  * 
- * 
- * Version: 0.0.1 - Added SuperHero class
  */
 
 namespace COMP123_SuperHero
 {
+    /**
+     *<summary>
+     * This is the class which to demonstrate the charecter SuperHero which is inharited from the class Hero. 
+     * 
+     * @class SuporHero
+     * @field {List<string>} _superPowers
+     * </summary>
+     * 
+     */
     class SuperHero : Hero
     {
         //PRIVATE INSTANCE VARIABLE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -26,7 +33,12 @@ namespace COMP123_SuperHero
 
 
         //PUBLIC PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+        /**
+         * This is the property for _superPowers field
+         * 
+         * @property{List<string>} SuperPowers
+         * 
+         */
         public List<string> SuperPowers
         {
             get {
@@ -60,10 +72,21 @@ namespace COMP123_SuperHero
         }
 
         //PRIVATE METHODS++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        /**
+         * This is the private method that randomly create 3 powers and add value to List array _superPowers 
+         * 
+         * @return {void}
+         * @field {Random} random
+         * @field {string[]} powers
+         * @field {int} loopEnding
+         * @field {int} i
+         * @field {string} randomValue
+         */
         private void _generateRandomPowers()
         {
             Random random = new Random();
-            string[] powers = new string[6] { "Super Speed", "Super Strength", "Body Armou", "Flight", "Fire Generation", "Weather Control"};
+            string[] powers = new string[6] { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Control"};
             int loopingEnd = 3;
 
             for (int i =0; i< loopingEnd; i++)
@@ -84,11 +107,18 @@ namespace COMP123_SuperHero
         }
 
         //PUBLIC METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        /**
+         * This is the method for displaying the value of List array _superPowers
+         * 
+         * @return {void}
+         * @field {string} superPower
+         */
+
         public void ShowPowers()
         {
-            foreach (string _superPower in _superPowers)
+            foreach (string superPower in _superPowers)
             {
-                Console.WriteLine(_superPower);
+                Console.WriteLine(superPower);
 
             }
             

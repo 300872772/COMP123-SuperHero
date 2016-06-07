@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * which has been inharited from Hero class 
  * 
  * 
- * Version: 0.0.2 - Added Instant variable, properties, constructor, private and public method
+ * Version: 0.0.3 - Called SuperHero class along with different methods.
  */
 
 namespace COMP123_SuperHero
@@ -34,6 +34,10 @@ namespace COMP123_SuperHero
             Console.WriteLine();   
 
             superHero.ShowPowers();
+            Console.WriteLine();
+
+            superHero.Fight();
+            Console.WriteLine();
 
         }
     }
