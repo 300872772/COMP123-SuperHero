@@ -19,7 +19,9 @@ using System.Threading.Tasks;
 namespace COMP123_SuperHero
 {
     /**
+     * <summary>
      * This is the driver class for SuperHero program that calls SuperHero class
+     * </summary>
      * 
      * @class Program
      */

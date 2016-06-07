@@ -20,10 +20,11 @@ namespace COMP123_SuperHero
     /**
      *<summary>
      * This is the class which to demonstrate the charecter SuperHero which is inharited from the class Hero. 
-     * 
+     * </summary>
+     *  
      * @class SuporHero
      * @field {List<string>} _superPowers
-     * </summary>
+     *
      * 
      */
     class SuperHero : Hero
@@ -57,11 +58,12 @@ namespace COMP123_SuperHero
         /**
          * <summary>
          * This is the constructor for SuperHero Class
-         * 
+         *  </summary>
+         *  
          * @constructor SuperHero
          * @param {string} name
          * @extends Hero
-         * </summary>
+         *
          * 
          */
         public SuperHero(string name) : base(name)
@@ -75,8 +77,10 @@ namespace COMP123_SuperHero
         //PRIVATE METHODS++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         /**
+         *  <summary>
          * This is the private method that randomly create 3 powers and add value to List array _superPowers 
-         * 
+         *  </summary>
+         *  
          * @return {void}
          * @field {Random} random
          * @field {string[]} powers
@@ -109,8 +113,10 @@ namespace COMP123_SuperHero
 
         //PUBLIC METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         /**
+         *  <summary>
          * This is the method for displaying the value of List array _superPowers
-         * 
+         *  </summary>
+         *  
          * @return {void}
          * @field {string} superPower
          */

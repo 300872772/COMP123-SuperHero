@@ -21,13 +21,14 @@ namespace COMP123_SuperHero
     /**
      * <summary>
      * This 'Hero' class defines a charecter Hero which has 4 fields, 1 properties, 3 private methods and 2 public methods 
-     * 
+     *  </summary>
+     *  
      * @class Hero
      * @field {int} _strength
      * @field {int} _speed
      * @field {int} _health
      * @field {string} _name
-     * </summary>
+     *
      * 
      */
     public class Hero
@@ -43,8 +44,10 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is a property for _name field
+        *  </summary>
+        *  
         * @property {string} Name 
-        * </summary>
+        *
         * 
         */
 
@@ -63,8 +66,9 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is a property for _strength field
+        *  </summary>
         * @property {int} Strength 
-        * </summary>
+        * 
         * 
         */
 
@@ -83,8 +87,11 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is a property for _speed field
+        *  </summary>
+        *  
+        *  
         * @property {int} Speed 
-        * </summary>
+        * 
         * 
         */
 
@@ -104,8 +111,10 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is a property for _health field
+        *  </summary>
+        *  
         * @property {int} Health 
-        * </summary>
+        * 
         * 
         */
 
@@ -129,11 +138,12 @@ namespace COMP123_SuperHero
         * <summary>
         * This is the constructor that takes the name parametere and passes to nameinstance variable
         *  and call _generateAbilit Method.
+        * </summary>
         *  
         * @constructor Hero 
         * @param {string} name 
         * 
-        * </summary>
+        * 
         * 
         */
 
@@ -148,10 +158,11 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is the privte method that generate random nuber and passed to _speed, _strength and _health instance variable
+        * </summary>
         * 
         * @method _generateAbility
         * @returns {void}        * 
-        * </summary>
+        * 
         * 
         */
 
@@ -166,10 +177,11 @@ namespace COMP123_SuperHero
         * <summary>
         * This is the privte method that generate GUI to show abilities and passed _speed, _strength and _health 
         * value by ability parametere
+        * </summary>
         * 
         * @method _abilitiesGUI
         * @returns {string} abilityGUI        * 
-        * </summary>
+        * 
         * 
         */
 
@@ -190,11 +202,12 @@ namespace COMP123_SuperHero
        * <summary>
        * This is the privte method that returns state of hit attempt of Hero charachter and set probability
        * by setProb parameter
+       * </summary>
        * 
        * @method _hitAttempt
        * @param (int) setProb
        * @returns {bool}        * 
-       * </summary>
+       * 
        * 
        */
 
@@ -217,10 +230,11 @@ namespace COMP123_SuperHero
         /**
        * <summary>
        * This is the privte method that generate hit damage value randomly and return damage value 
-       * 
+       *  </summary>
+       *  
        * @method _hitDamage
        * @returns {int}        * 
-       * </summary>
+       *
        * 
        */
         private int _hitDamage()
@@ -236,11 +250,12 @@ namespace COMP123_SuperHero
         * <summary>
         * This is the Public Method that calls _hitAttempt boolean method and sets setProb paramete value. 
         * If _hitAttempt method returns true value calls _hitDamage method and show damage value to console
-        * 
+        *  </summary>
+        *  
         *@method Fight
         *@returns {void} 
         *  
-        * </summary>
+        *
         * 
         */
         public void Fight()
@@ -272,11 +287,13 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is the Public Method that displays all properties of Hero class
-        * 
+        *  </summary>
+        *  
+        *  
         * @method Show
         * @returns {void}
         * 
-        * </summary>
+        *
         * 
         */
 
@@ -318,11 +335,12 @@ namespace COMP123_SuperHero
        * <summary>
        * This is the public method made for testing purpose ony that calls _hitAttempt method 
        * by setProb parameter
-       * 
+       *  </summary>
+       *  
        * @method HitAttempt
        * @param (int) setProb
        * @returns {bool}        * 
-       * </summary>
+       *
        * 
        */
 
@@ -335,10 +353,11 @@ namespace COMP123_SuperHero
         /**
         * <summary>
         * This is the public method made for testing purpose only that calls _hitDamage method 
-        * 
+        *  </summary>
+        *  
         * @method HitDamage
         * @returns {int}        * 
-        * </summary>
+        *
         * 
         */
         public int HitDamage()
