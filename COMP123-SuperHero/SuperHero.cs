@@ -27,11 +27,11 @@ namespace COMP123_SuperHero
      *
      * 
      */
-    class SuperHero : Hero
+   public class SuperHero : Hero
     {
         //PRIVATE INSTANCE VARIABLE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-            private List<string> _superPowers = new List<string>();
+        private List<string> _superPowers = new List<string>();
 
 
         //PUBLIC PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -43,7 +43,8 @@ namespace COMP123_SuperHero
          */
         public List<string> SuperPowers
         {
-            get {
+            get
+            {
                 return this._superPowers;
             }
             set
@@ -91,25 +92,25 @@ namespace COMP123_SuperHero
         private void _generateRandomPowers()
         {
             Random random = new Random();
-            string[] powers = new string[6] { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Control"};
+            string[] powers = new string[6] { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Control" };
             int loopingEnd = 3;
 
-            for (int i =0; i< loopingEnd; i++)
+            for (int i = 0; i < loopingEnd; i++)
             {
-                string randomValue = powers[random.Next(0, 5)];
-                 if (_superPowers.Contains(randomValue))
-                 {
+                string randomValue = powers[random.Next(0, 6)];
+                if (this.SuperPowers.Contains(randomValue))
+                {
                     loopingEnd++;
-                 }
-                 else
-                 {
-                     _superPowers.Add(randomValue);
-                 }
-             
+                }
+                else
+                {
+                    this.SuperPowers.Add(randomValue);
+                }
+
             }
 
 
-        }
+        }// end _generateRandomPowers methods
 
         //PUBLIC METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         /**
@@ -142,24 +143,24 @@ namespace COMP123_SuperHero
             {
                 Thread.Sleep(20);
                 Console.Write(singleChar);
-                
+
             }
             Console.WriteLine();
             Console.WriteLine();
 
             Thread.Sleep(50);
-            foreach (string superPower in _superPowers)
+            foreach (string superPower in this.SuperPowers)
             {
                 count++;
-                Console.WriteLine("     " + count +": " + superPower);
-               
+                Console.WriteLine("     " + count + ": " + superPower);
+
             }
 
             Console.WriteLine();
 
             Thread.Sleep(50);
 
-            for (int i =0; i<65; i++)
+            for (int i = 0; i < 65; i++)
             {
                 Thread.Sleep(20);
                 Console.Write("#");
@@ -168,8 +169,29 @@ namespace COMP123_SuperHero
             Console.WriteLine();
 
             Thread.Sleep(50);
+        }//end ShowPowers method
+
+        /**
+        * <summary>
+        *This method is only used for testing _generateRandomPowers method under SuperHero class
+        * 
+        * @method GenerateRandomPowers
+        * @field {int}  randomPower
+        * @return {int}
+        * 
+        * </summary>
+        */
+        public int GenerateRandomPowers()
+        {
+             _generateRandomPowers();
+            int randomPower=0;
+
+            randomPower = SuperPowers.Count;
+
+            return randomPower;
         }
-    }
+
+    }//end SuperHero class
 
 
-}
+}//end namespace

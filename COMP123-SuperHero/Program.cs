@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * which has been inharited from Hero class 
  * 
  * 
- * Version: 0.0.4 - Added Console decoration.
+ * Version: 0.0.5 - Added UnitTest project.
  */
 
 namespace COMP123_SuperHero
